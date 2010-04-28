@@ -66,8 +66,12 @@ public class SoftwarePassionView extends ListActivity{
               Order o2 = new Order();
               o2.setOrderName("SF Advertisement");
               o2.setOrderStatus("Completed");
+              Order o3 = new Order();
+              o3.setOrderName("Order 3");
+              o3.setOrderStatus("Completed");
               m_orders.add(o1);
               m_orders.add(o2);
+              m_orders.add(o3);
               Thread.sleep(5000);
               Log.i("ARRAY", ""+ m_orders.size());
             } catch (Exception e) {

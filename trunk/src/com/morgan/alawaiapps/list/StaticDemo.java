@@ -12,8 +12,6 @@ package com.morgan.alawaiapps.list;
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-	
-	Random line
 */
 
 import android.app.Activity;
@@ -30,22 +28,26 @@ import android.util.Log;
 public class StaticDemo extends ListActivity {
 
 	final String TAG ="List";
+
 	
 	TextView selection;
-	String[] items={"lorem", "ipsum", "dolor", "sit", "amet",
+//	String[] items = getResources().getStringArray(R.array.countries_array);
+	String[] items={"SoftwarePassionView", "ipsum", "dolor", "sit", "amet",
 					"consectetuer", "adipiscing", "elit", "morbi", "vel",
 					"ligula", "vitae", "arcu", "aliquet", "mollis",
 					"etiam", "vel", "erat", "placerat", "ante",
 					"porttitor", "sodales", "pellentesque", "augue",
 					"purus"};
 	
+	
 	@Override
 	public void onCreate(Bundle icicle) {
+		Log.d(TAG, "in oncreate");
 		super.onCreate(icicle);
 		setContentView(R.layout.main);
-		setListAdapter(new ArrayAdapter<String>(this,
-												R.layout.row, R.id.label,
-												items));
+		setListAdapter(new ArrayAdapter<String>(this, R.layout.row, R.id.label, items));
+	//	setListAdapter(new ArrayAdapter<String>(this, R.layout.row, items));
+		
 		selection=(TextView)findViewById(R.id.selection);
 	}
 	
