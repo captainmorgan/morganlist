@@ -32,7 +32,7 @@ public class StaticDemo extends ListActivity {
 	
 	TextView selection;
 //	String[] items = getResources().getStringArray(R.array.countries_array);
-	String[] items={"SoftwarePassionView", "ipsum", "dolor", "sit", "amet",
+	String[] items={"SoftwarePassionView", "ClickableListItemActivity", "MediaPlayer", "sit", "amet",
 					"consectetuer", "adipiscing", "elit", "morbi", "vel",
 					"ligula", "vitae", "arcu", "aliquet", "mollis",
 					"etiam", "vel", "erat", "placerat", "ante",
@@ -63,7 +63,7 @@ public class StaticDemo extends ListActivity {
 			break;
 		case 2:
 			Log.d(TAG, "case 2. list position =" + position);
-			Intent q1 = new Intent(StaticDemo.this, SoftwarePassionView.class);
+			Intent q1 = new Intent(StaticDemo.this, ClickableListItemActivity.class);
 			startActivity(q1);
 			break;
 		default:
