@@ -1,3 +1,8 @@
+/**
+ * Grabbed from Android Snippets
+ * http://www.androidsnippets.org/snippets/125/
+ */
+
 package com.morgan.alawaiapps.list; 
 
 import java.util.ArrayList;  
